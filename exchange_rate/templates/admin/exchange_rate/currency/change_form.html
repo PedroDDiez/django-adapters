@@ -55,8 +55,10 @@
 {% block after_field_sets %}{% endblock %}
 
 {% block inline_field_sets %}
-    <h1> PEDRO </h1>
-
+    <h1> Charts </h1>
+    <div class="form-row field-code">
+     <iframe src="{% url 'index' base_currency=original %}" title="chart" style="border:none;height:500px;width:1500px;" ></iframe>
+    </div>
 {% for inline_admin_formset in inline_admin_formsets %}
     {% include inline_admin_formset.opts.template %}
 {% endfor %}
