@@ -12,7 +12,7 @@ def load_currencies(apps, schema_editor):
 
 def load_providers(apps, schema_editor):
     Provider.objects.create(**{'name': 'Fixer', 'priority': 1, 'adapter': 'exchange_rate.adapters.FixerAdapter'})
-    Provider.objects.create(**{'name': 'Mock', 'priority': 1, 'adapter': 'exchange_rate.adapters.MockAdapter'})
+    Provider.objects.create(**{'name': 'Mock', 'priority': 2, 'adapter': 'exchange_rate.adapters.MockAdapter'})
 
 
 class Migration(migrations.Migration):
