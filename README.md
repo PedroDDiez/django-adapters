@@ -98,6 +98,3 @@ These are some considerations, decissions and asumptions I took when designing a
 4. Adapters in Django: https://charlesleifer.com/blog/django-patterns-pluggable-backends/
 
 
-
-
-## De este proyecto:
